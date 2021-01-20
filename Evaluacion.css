@@ -1,0 +1,209 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+    transition:all 2s ease;
+
+    /*box-sizing: border-box;*/
+}
+
+body {
+    background-color: rgb(255, 235, 205);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(82, 50, 2);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+}
+
+.Img{
+    align-content: center;
+}
+
+.Logo{
+    width: 20%;
+    height: auto;
+    align-content: center;
+}
+
+.Banner{
+    width: 70%;
+    height: auto;
+    align-self:center;
+    align-content: center;
+    /* border-radius: 500%; */
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-self: center;
+    
+}
+
+nav li{
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: rgb(255, 235, 205);
+    
+}
+
+/**/
+.Conocenos {
+    text-align: center;
+}
+
+Img{
+    width: 150px;
+    height: auto;
+}
+
+h1{
+    text-align: center;
+    color: rgb(82, 50, 2);
+}
+
+.Box1 {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:15px;
+    grid-template-areas:"BoxesA";
+}
+
+.Box2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2,auto);
+    text-align: center;
+    grid-gap:15px;
+    grid-template-areas:"BoxesB";
+}
+
+footer{
+    text-align: center;
+}
+
+i{
+    color: rgb(82, 50, 2);
+}
+
+@media (max-width: 768px) {
+
+    .Img{
+        width: 100%;
+        align-self: center
+    }
+
+    nav {
+        width: 300px;
+        align-self: center;
+        justify-content: space-evenly;
+    }
+
+    .Nuestra_Empresa {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    }
+
+    .Titulo {
+    align-self: center;
+    }
+
+    .Img{
+        align-content: center;
+    }
+
+    .Box1 {
+        min-height: 350px;
+        padding: 4rem;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .Box2 {
+        min-height: 350px;
+        padding: 4rem;
+        display:flex;
+        flex-direction: column;
+    }
+
+    .imgserv {
+        display: flex;
+        width: 40%;
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+
+    .Footer {
+        max-width: 400px;
+        align-self: center;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .Img {
+        width: 80%;
+        align-self: center;
+
+    }
+    nav {
+        width: 700px;
+        align-self: center;
+        justify-content: space-evenly;
+    }
+
+    .Nuestra_Empresa {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .Titulo {
+    align-self: center;
+    }
+
+    .Box1 {
+        max-width: 100%;
+        min-height: 500px;
+        justify-content: space-evenly;
+        display:flex;
+        flex-direction: row;
+    }
+
+    .imgserv {
+        display: flex;
+        width: 30%;
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+
+    .Proyecto {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .Box2 {
+        min-height: 350px;
+        padding: 1rem;
+    }
+
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1280px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+}
